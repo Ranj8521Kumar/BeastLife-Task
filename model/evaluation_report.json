@@ -1,0 +1,80 @@
+{
+  "accuracy": 0.5,
+  "cv_mean": 0.58,
+  "cv_std": 0.0872,
+  "cv_folds": [
+    0.75,
+    0.55,
+    0.55,
+    0.5,
+    0.55
+  ],
+  "classes": [
+    "Delivery Delay",
+    "General Inquiry",
+    "Order Status",
+    "Payment Issue",
+    "Product Complaint",
+    "Refund Request"
+  ],
+  "classification_report": {
+    "Delivery Delay": {
+      "precision": 0.14285714285714285,
+      "recall": 0.3333333333333333,
+      "f1-score": 0.2,
+      "support": 3.0
+    },
+    "General Inquiry": {
+      "precision": 0.75,
+      "recall": 0.6,
+      "f1-score": 0.6666666666666666,
+      "support": 5.0
+    },
+    "Order Status": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 3.0
+    },
+    "Payment Issue": {
+      "precision": 0.6666666666666666,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.6666666666666666,
+      "support": 3.0
+    },
+    "Product Complaint": {
+      "precision": 0.6666666666666666,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.6666666666666666,
+      "support": 3.0
+    },
+    "Refund Request": {
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.8,
+      "support": 3.0
+    },
+    "accuracy": 0.5,
+    "macro avg": {
+      "precision": 0.5376984126984127,
+      "recall": 0.4888888888888889,
+      "f1-score": 0.5,
+      "support": 20.0
+    },
+    "weighted avg": {
+      "precision": 0.5589285714285714,
+      "recall": 0.5,
+      "f1-score": 0.5166666666666667,
+      "support": 20.0
+    }
+  },
+  "confidence_distribution": {
+    "high_count": 1,
+    "medium_count": 10,
+    "low_count": 9
+  },
+  "thresholds": {
+    "high": 0.5,
+    "medium": 0.3
+  }
+}
