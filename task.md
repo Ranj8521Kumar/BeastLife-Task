@@ -43,11 +43,11 @@
 - [x] Create system flow document
 
 ## PHASE 9: Deliverables Preparation
-- [ ] Dataset file
-- [ ] Workflow doc
-- [ ] Model explanation
-- [ ] Dashboard
-- [ ] Scaling plan
+- [x] Dataset file
+- [x] Workflow doc
+- [x] Model explanation
+- [x] Dashboard
+- [x] Scaling plan
 
 ## PHASE 10: Scaling & Optimization
 - [ ] Real-world deployment recommendations
