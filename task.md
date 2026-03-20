@@ -36,8 +36,8 @@
 - [ ] Build response_engine.py
 
 ## PHASE 7: Dashboard Design
-- [ ] Propose metrics and visualizations
-- [ ] Build dashboard.py
+- [x] Propose metrics and visualizations
+- [x] Build dashboard.py
 
 ## PHASE 8: Workflow Architecture
 - [ ] Create system flow document
