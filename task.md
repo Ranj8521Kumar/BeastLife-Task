@@ -40,7 +40,7 @@
 - [x] Build dashboard.py
 
 ## PHASE 8: Workflow Architecture
-- [ ] Create system flow document
+- [x] Create system flow document
 
 ## PHASE 9: Deliverables Preparation
 - [ ] Dataset file
