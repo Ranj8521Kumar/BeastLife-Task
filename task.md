@@ -32,8 +32,8 @@
 - [x] Predictions saved to [data/predictions.csv](file:///e:/BeastLife%20Task/data/predictions.csv)
 
 ## PHASE 6: Automation Logic
-- [ ] Define auto-reply, escalation, confidence rules
-- [ ] Build response_engine.py
+- [x] Define auto-reply, escalation, confidence rules
+- [x] Build response_engine.py
 
 ## PHASE 7: Dashboard Design
 - [x] Propose metrics and visualizations
@@ -50,4 +50,4 @@
 - [x] Scaling plan
 
 ## PHASE 10: Scaling & Optimization
-- [ ] Real-world deployment recommendations
+- [x] Real-world deployment recommendations
