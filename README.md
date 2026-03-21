@@ -8,22 +8,19 @@ This project demonstrates how to:
 - escalate uncertain/high-risk cases to human support,
 - and convert support data into dashboard-ready business insights.
 
+## Architecture Diagram
+
+![Architecture Diagram](architecture_diagram.png)
+
 ---
 
-## Why This Project Matters (Interview Lens)
+## Why This Project Matters
 
 This project is built to show practical product + ML + automation thinking:
 - **Business value:** faster response time, reduced support load, better issue visibility.
 - **ML value:** confidence-aware prediction and routing, not just classification.
 - **Operations value:** SLA-aware ticketing and audit logging.
 - **Execution value:** complete pipeline from dataset to working dashboard.
-
-If you are presenting this in interviews, this is a strong example of:
-- solving a real workflow problem end-to-end,
-- balancing automation with safe human escalation,
-- and shipping usable deliverables.
-
----
 
 ## Problem Statement
 
@@ -124,19 +121,7 @@ python "dashboard/dashboard.py"
 
 ---
 
-## Interview Talking Points
-
-Use these points when presenting:
-- "I designed confidence-aware automation, not blind auto-reply."
-- "I implemented a safe fallback path: uncertain/urgent cases go to humans."
-- "I connected model outputs to business metrics via a working dashboard."
-- "I focused on production behavior: SLA logic, ticketing, auditability."
-- "I can scale this design with queue workers, DB persistence, and retraining loops."
-
----
-
-## Measurable Outcomes You Can Claim
-
+## Measurable Outcomes
 - Reduced manual triage by routing high-confidence cases automatically.
 - Better support visibility via category distribution and trend metrics.
 - Safer automation through threshold controls + urgent overrides.
@@ -153,14 +138,3 @@ Use these points when presenting:
 - Add API/webhook layer for real-time channel integration
 
 ---
-
-## Deliverables Completed
-
-- Workflow explanation document
-- Sample dataset
-- AI categorization and automation logic
-- Working dashboard
-- Scaling and optimization plan
-
-This repository is ready to be presented as a practical AI automation case study for interviews and job applications.
-
