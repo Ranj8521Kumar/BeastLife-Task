@@ -1,0 +1,693 @@
+query_id,ref_id,channel,raw_query,predicted_category,confidence_score,confidence_tier,urgent_override,action,effective_priority,sla_first_response,sla_resolution,auto_reply,conversation_turns,ticket_id,timestamp
+Q001,REF-51785E,WhatsApp,Where is my order? It was supposed to arrive yesterday.,Order Status,0.6661,High,False,Auto-Reply,High,1h,4h,"Hi! Thanks for messaging us on WhatsApp.
+
+Your order is currently being processed by our fulfillment team. You can track your order in real-time at: https://track.beastlife.com/REF-51785E. Expected delivery: 2-5 business days. If you need further assistance, our team is available 24/7.
+
+Reply anytime - we're here 24/7.",0,N/A,2026-03-21T21:27:44.903295
+Q002,REF-02A616,Email,Can you tell me the current status of order #45231?,Order Status,0.6452,High,False,Auto-Reply,Medium,4h,24h,"Dear Customer,
+
+Thank you for reaching out via email.
+
+Your order is currently being processed by our fulfillment team. You can track your order in real-time at: https://track.beastlife.com/REF-02A616. Expected delivery: 2-5 business days. If you need further assistance, our team is available 24/7.
+
+Best regards,
+Customer Support Team
+support@beastlife.com",0,N/A,2026-03-21T21:27:44.904169
+Q003,REF-203762,Instagram DM,My package hasn't arrived yet. Order number is 78902.,Delivery Delay,0.2708,Low,False,Human Escalation,High,1h,4h,"Hey! Thanks for DMing us on Instagram.
+
+Your query requires personalized attention. We're connecting you with a live support agent right now. Estimated wait time: 3-5 minutes. Your reference: REF-203762.
+
+Feel free to DM us anytime.",0,TKT-6A8F0EB4,2026-03-21T21:27:44.906846
+Q004,REF-6A271D,Website Chat,Track my order please. Order ID: ORD-2024-00198.,Order Status,0.5914,High,False,Auto-Reply,Medium,4h,24h,"Hello! Thanks for contacting us on our website.
+
+Your order is currently being processed by our fulfillment team. You can track your order in real-time at: https://track.beastlife.com/REF-6A271D. Expected delivery: 2-5 business days. If you need further assistance, our team is available 24/7.
+
+Is there anything else I can help you with today?",0,N/A,2026-03-21T21:27:44.908384
+Q005,REF-EAB390,WhatsApp,I ordered 3 days ago and still no update. Where is it?,Order Status,0.6719,High,False,Auto-Reply,High,1h,4h,"Hi! Thanks for messaging us on WhatsApp.
+
+Your order is currently being processed by our fulfillment team. You can track your order in real-time at: https://track.beastlife.com/REF-EAB390. Expected delivery: 2-5 business days. If you need further assistance, our team is available 24/7.
+
+Reply anytime - we're here 24/7.",0,N/A,2026-03-21T21:27:44.909812
+Q006,REF-FA29CB,Email,What's the estimated delivery date for my order #55781?,Order Status,0.6232,High,False,Auto-Reply,Low,24h,72h,"Dear Customer,
+
+Thank you for reaching out via email.
+
+Your order is currently being processed by our fulfillment team. You can track your order in real-time at: https://track.beastlife.com/REF-FA29CB. Expected delivery: 2-5 business days. If you need further assistance, our team is available 24/7.
+
+Best regards,
+Customer Support Team
+support@beastlife.com",0,N/A,2026-03-21T21:27:44.912240
+Q007,REF-811E54,Instagram DM,I want to know if my order has been shipped yet.,Order Status,0.6468,High,False,Auto-Reply,Low,24h,72h,"Hey! Thanks for DMing us on Instagram.
+
+Your order is currently being processed by our fulfillment team. You can track your order in real-time at: https://track.beastlife.com/REF-811E54. Expected delivery: 2-5 business days. If you need further assistance, our team is available 24/7.
+
+Feel free to DM us anytime.",0,N/A,2026-03-21T21:27:44.914044
+Q008,REF-98A158,Website Chat,Still waiting for my order from last week. Any updates?,Order Status,0.6777,High,False,Auto-Reply,Medium,4h,24h,"Hello! Thanks for contacting us on our website.
+
+Your order is currently being processed by our fulfillment team. You can track your order in real-time at: https://track.beastlife.com/REF-98A158. Expected delivery: 2-5 business days. If you need further assistance, our team is available 24/7.
+
+Is there anything else I can help you with today?",0,N/A,2026-03-21T21:27:44.915389
+Q009,REF-935DC7,WhatsApp,Order 99201 — is it dispatched?,Order Status,0.6782,High,False,Auto-Reply,Low,24h,72h,"Hi! Thanks for messaging us on WhatsApp.
+
+Your order is currently being processed by our fulfillment team. You can track your order in real-time at: https://track.beastlife.com/REF-935DC7. Expected delivery: 2-5 business days. If you need further assistance, our team is available 24/7.
+
+Reply anytime - we're here 24/7.",0,N/A,2026-03-21T21:27:44.916278
+Q010,REF-A0A2A3,Email,Please update me on my order #11237. It's been 5 days.,Order Status,0.6353,High,False,Auto-Reply,High,1h,4h,"Dear Customer,
+
+Thank you for reaching out via email.
+
+Your order is currently being processed by our fulfillment team. You can track your order in real-time at: https://track.beastlife.com/REF-A0A2A3. Expected delivery: 2-5 business days. If you need further assistance, our team is available 24/7.
+
+Best regards,
+Customer Support Team
+support@beastlife.com",0,N/A,2026-03-21T21:27:44.917109
+Q011,REF-5A9E71,WhatsApp,My delivery is delayed by 3 days. This is unacceptable!,Delivery Delay,0.7049,High,False,Auto-Reply,High,1h,4h,"Hi! Thanks for messaging us on WhatsApp.
+
+We sincerely apologize for the inconvenience caused by the delivery delay. Our logistics team has been notified and is actively working to expedite your shipment. You will receive a detailed update within the next 24 hours. As a token of apology, a discount coupon has been added to your account.
+
+Reply anytime - we're here 24/7.",0,N/A,2026-03-21T21:27:44.918258
+Q012,REF-B84451,Email,My package was supposed to arrive Monday but still hasn't.,Delivery Delay,0.5231,High,False,Auto-Reply,High,1h,4h,"Dear Customer,
+
+Thank you for reaching out via email.
+
+We sincerely apologize for the inconvenience caused by the delivery delay. Our logistics team has been notified and is actively working to expedite your shipment. You will receive a detailed update within the next 24 hours. As a token of apology, a discount coupon has been added to your account.
+
+Best regards,
+Customer Support Team
+support@beastlife.com",0,N/A,2026-03-21T21:27:44.919119
+Q013,REF-4ED7FB,Instagram DM,Why is my delivery taking so long? I ordered a week ago!,Delivery Delay,0.6742,High,False,Auto-Reply,High,1h,4h,"Hey! Thanks for DMing us on Instagram.
+
+We sincerely apologize for the inconvenience caused by the delivery delay. Our logistics team has been notified and is actively working to expedite your shipment. You will receive a detailed update within the next 24 hours. As a token of apology, a discount coupon has been added to your account.
+
+Feel free to DM us anytime.",0,N/A,2026-03-21T21:27:44.919855
+Q014,REF-EDA083,Website Chat,The courier says delivered but I never received it.,Product Complaint,0.4839,High,True,Auto-Reply,High,1h,4h,"Hello! Thanks for contacting us on our website.
+
+We sincerely apologize for the experience with your product. This is not the standard we hold ourselves to. Please share photos/videos of the issue by replying to this message, and we will arrange an immediate replacement or full refund — whichever you prefer.
+
+Is there anything else I can help you with today?",0,N/A,2026-03-21T21:27:44.920629
+Q015,REF-4E95C3,WhatsApp,Delivery delayed again! This is the second time.,Delivery Delay,0.6911,High,False,Auto-Reply,High,1h,4h,"Hi! Thanks for messaging us on WhatsApp.
+
+We sincerely apologize for the inconvenience caused by the delivery delay. Our logistics team has been notified and is actively working to expedite your shipment. You will receive a detailed update within the next 24 hours. As a token of apology, a discount coupon has been added to your account.
+
+Reply anytime - we're here 24/7.",0,N/A,2026-03-21T21:27:44.921346
+Q016,REF-9E5BBB,Email,I'm getting a delay notification every day. When will it come?,Delivery Delay,0.6184,High,False,Auto-Reply,Medium,4h,24h,"Dear Customer,
+
+Thank you for reaching out via email.
+
+We sincerely apologize for the inconvenience caused by the delivery delay. Our logistics team has been notified and is actively working to expedite your shipment. You will receive a detailed update within the next 24 hours. As a token of apology, a discount coupon has been added to your account.
+
+Best regards,
+Customer Support Team
+support@beastlife.com",0,N/A,2026-03-21T21:27:44.922258
+Q017,REF-0A770D,Instagram DM,My parcel is stuck in transit since 5 days.,Delivery Delay,0.3016,Medium,False,Ticket Creation,High,1h,4h,"Hey! Thanks for DMing us on Instagram.
+
+Thank you for reaching out. We've created a support ticket for your query (Ref: REF-0A770D). A dedicated agent will respond within the SLA window.
+
+Feel free to DM us anytime.",0,TKT-C8C0CAF6,2026-03-21T21:27:44.925553
+Q018,REF-D2D322,Website Chat,Weather delay or what? My order hasn't moved.,Delivery Delay,0.5064,High,False,Auto-Reply,Low,24h,72h,"Hello! Thanks for contacting us on our website.
+
+We sincerely apologize for the inconvenience caused by the delivery delay. Our logistics team has been notified and is actively working to expedite your shipment. You will receive a detailed update within the next 24 hours. As a token of apology, a discount coupon has been added to your account.
+
+Is there anything else I can help you with today?",0,N/A,2026-03-21T21:27:44.926960
+Q019,REF-5F8DFB,WhatsApp,Expected delivery was yesterday. What's going on?,Delivery Delay,0.5695,High,False,Auto-Reply,Medium,4h,24h,"Hi! Thanks for messaging us on WhatsApp.
+
+We sincerely apologize for the inconvenience caused by the delivery delay. Our logistics team has been notified and is actively working to expedite your shipment. You will receive a detailed update within the next 24 hours. As a token of apology, a discount coupon has been added to your account.
+
+Reply anytime - we're here 24/7.",0,N/A,2026-03-21T21:27:44.929355
+Q020,REF-7A72ED,Email,Tracking shows out for delivery since morning but not arrived.,Delivery Delay,0.6593,High,False,Auto-Reply,Medium,4h,24h,"Dear Customer,
+
+Thank you for reaching out via email.
+
+We sincerely apologize for the inconvenience caused by the delivery delay. Our logistics team has been notified and is actively working to expedite your shipment. You will receive a detailed update within the next 24 hours. As a token of apology, a discount coupon has been added to your account.
+
+Best regards,
+Customer Support Team
+support@beastlife.com",0,N/A,2026-03-21T21:27:44.930957
+Q021,REF-9E36F1,WhatsApp,I want to return this product and get my money back.,Refund Request,0.695,High,False,Auto-Reply,High,1h,4h,"Hi! Thanks for messaging us on WhatsApp.
+
+We have successfully received your refund request (Reference: REF-9E36F1). Your refund of the debited amount will be credited to your original payment method within 5-7 business days. You will receive a confirmation email once the refund has been initiated.
+
+Reply anytime - we're here 24/7.",0,N/A,2026-03-21T21:27:44.931893
+Q022,REF-F68B7A,Email,Please initiate refund for order #78234. Product was damaged.,Refund Request,0.322,Medium,False,Ticket Creation,High,1h,4h,"Dear Customer,
+
+Thank you for reaching out via email.
+
+Thank you for reaching out. We've created a support ticket for your query (Ref: REF-F68B7A). A dedicated agent will respond within the SLA window.
+
+Best regards,
+Customer Support Team
+support@beastlife.com",0,TKT-8FABD32A,2026-03-21T21:27:44.934553
+Q023,REF-856D7E,Instagram DM,I need a full refund. The item was completely wrong.,Refund Request,0.6933,High,False,Auto-Reply,High,1h,4h,"Hey! Thanks for DMing us on Instagram.
+
+We have successfully received your refund request (Reference: REF-856D7E). Your refund of the debited amount will be credited to your original payment method within 5-7 business days. You will receive a confirmation email once the refund has been initiated.
+
+Feel free to DM us anytime.",0,N/A,2026-03-21T21:27:44.935718
+Q024,REF-4C020C,Website Chat,How do I request a refund for my order?,Refund Request,0.6796,High,False,Auto-Reply,Medium,4h,24h,"Hello! Thanks for contacting us on our website.
+
+We have successfully received your refund request (Reference: REF-4C020C). Your refund of the debited amount will be credited to your original payment method within 5-7 business days. You will receive a confirmation email once the refund has been initiated.
+
+Is there anything else I can help you with today?",0,N/A,2026-03-21T21:27:44.936628
+Q025,REF-2A527A,WhatsApp,Refund not credited yet. It's been 10 days.,Refund Request,0.6267,High,False,Auto-Reply,High,1h,4h,"Hi! Thanks for messaging us on WhatsApp.
+
+We have successfully received your refund request (Reference: REF-2A527A). Your refund of the debited amount will be credited to your original payment method within 5-7 business days. You will receive a confirmation email once the refund has been initiated.
+
+Reply anytime - we're here 24/7.",0,N/A,2026-03-21T21:27:44.937461
+Q026,REF-994C39,Email,I cancelled my order. When will I get the refund?,Refund Request,0.6987,High,False,Auto-Reply,Medium,4h,24h,"Dear Customer,
+
+Thank you for reaching out via email.
+
+We have successfully received your refund request (Reference: REF-994C39). Your refund of the debited amount will be credited to your original payment method within 5-7 business days. You will receive a confirmation email once the refund has been initiated.
+
+Best regards,
+Customer Support Team
+support@beastlife.com",0,N/A,2026-03-21T21:27:44.938240
+Q027,REF-C01FC1,Instagram DM,Item was defective. I want my money back immediately.,Refund Request,0.7039,High,True,Auto-Reply,High,1h,4h,"Hey! Thanks for DMing us on Instagram.
+
+We have successfully received your refund request (Reference: REF-C01FC1). Your refund of the debited amount will be credited to your original payment method within 5-7 business days. You will receive a confirmation email once the refund has been initiated.
+
+Feel free to DM us anytime.",0,N/A,2026-03-21T21:27:44.939423
+Q028,REF-069CA6,Website Chat,How long does a refund take to process?,Refund Request,0.7077,High,False,Auto-Reply,Low,24h,72h,"Hello! Thanks for contacting us on our website.
+
+We have successfully received your refund request (Reference: REF-069CA6). Your refund of the debited amount will be credited to your original payment method within 5-7 business days. You will receive a confirmation email once the refund has been initiated.
+
+Is there anything else I can help you with today?",0,N/A,2026-03-21T21:27:44.940581
+Q029,REF-649694,WhatsApp,Refund status — order #44512. Still pending?,Refund Request,0.6843,High,False,Auto-Reply,Medium,4h,24h,"Hi! Thanks for messaging us on WhatsApp.
+
+We have successfully received your refund request (Reference: REF-649694). Your refund of the debited amount will be credited to your original payment method within 5-7 business days. You will receive a confirmation email once the refund has been initiated.
+
+Reply anytime - we're here 24/7.",0,N/A,2026-03-21T21:27:44.941400
+Q030,REF-685491,Email,My refund of ₹2500 hasn't hit my account yet.,Refund Request,0.3182,Medium,False,Ticket Creation,High,1h,4h,"Dear Customer,
+
+Thank you for reaching out via email.
+
+Thank you for reaching out. We've created a support ticket for your query (Ref: REF-685491). A dedicated agent will respond within the SLA window.
+
+Best regards,
+Customer Support Team
+support@beastlife.com",0,TKT-155E0D7B,2026-03-21T21:27:44.945783
+Q031,REF-61C16C,WhatsApp,Do you offer free shipping on orders above 500?,General Inquiry,0.6632,High,False,Auto-Reply,Low,24h,72h,"Hi! Thanks for messaging us on WhatsApp.
+
+Thank you for your query. Our support team has received your message and will get back to you with a detailed response shortly. In the meantime, you can visit our FAQ at: https://help.beastlife.com/faq for quick answers to common questions.
+
+Quick answer from FAQ:
+Q: Do you offer free shipping?
+A: Yes, we offer free shipping on eligible orders above the minimum cart value shown at checkout.
+
+Reply anytime - we're here 24/7.",0,N/A,2026-03-21T21:27:44.947775
+Q032,REF-F7217B,Email,What are your business hours for customer support?,General Inquiry,0.4187,Medium,False,Ticket Creation,Low,24h,72h,"Dear Customer,
+
+Thank you for reaching out via email.
+
+Thank you for reaching out. We've created a support ticket for your query (Ref: REF-F7217B). A dedicated agent will respond within the SLA window.
+
+Quick answer from FAQ:
+Q: What payment methods are supported?
+A: We support UPI, cards, net banking, and major wallets where available.
+
+Best regards,
+Customer Support Team
+support@beastlife.com",0,TKT-1AE9800A,2026-03-21T21:27:44.950780
+Q033,REF-058358,Instagram DM,Can I change the delivery address after placing the order?,General Inquiry,0.2883,Low,False,Human Escalation,Medium,4h,24h,"Hey! Thanks for DMing us on Instagram.
+
+Your query requires personalized attention. We're connecting you with a live support agent right now. Estimated wait time: 3-5 minutes. Your reference: REF-058358.
+
+Feel free to DM us anytime.",0,TKT-9C78026C,2026-03-21T21:27:44.955139
+Q034,REF-3CD26A,Website Chat,How do I create an account on your website?,General Inquiry,0.6534,High,False,Auto-Reply,Low,24h,72h,"Hello! Thanks for contacting us on our website.
+
+Thank you for your query. Our support team has received your message and will get back to you with a detailed response shortly. In the meantime, you can visit our FAQ at: https://help.beastlife.com/faq for quick answers to common questions.
+
+Quick answer from FAQ:
+Q: How can I track my order?
+A: You can track your order from the order history page or via the tracking link sent by SMS/email.
+
+Is there anything else I can help you with today?",0,N/A,2026-03-21T21:27:44.956290
+Q035,REF-51243B,WhatsApp,Do you deliver to Tier 3 cities?,General Inquiry,0.6671,High,False,Auto-Reply,Low,24h,72h,"Hi! Thanks for messaging us on WhatsApp.
+
+Thank you for your query. Our support team has received your message and will get back to you with a detailed response shortly. In the meantime, you can visit our FAQ at: https://help.beastlife.com/faq for quick answers to common questions.
+
+Quick answer from FAQ:
+Q: Do you offer free shipping?
+A: Yes, we offer free shipping on eligible orders above the minimum cart value shown at checkout.
+
+Reply anytime - we're here 24/7.",0,N/A,2026-03-21T21:27:44.957149
+Q036,REF-34291B,Email,What is your return policy?,General Inquiry,0.5913,High,False,Auto-Reply,Low,24h,72h,"Dear Customer,
+
+Thank you for reaching out via email.
+
+Thank you for your query. Our support team has received your message and will get back to you with a detailed response shortly. In the meantime, you can visit our FAQ at: https://help.beastlife.com/faq for quick answers to common questions.
+
+Quick answer from FAQ:
+Q: How can I request a refund?
+A: You can request a refund from the orders page or by contacting support with your order ID.
+
+Best regards,
+Customer Support Team
+support@beastlife.com",0,N/A,2026-03-21T21:27:44.957923
+Q037,REF-A76AA1,Instagram DM,Can I buy in bulk? Are there wholesale options?,General Inquiry,0.6477,High,False,Auto-Reply,Low,24h,72h,"Hey! Thanks for DMing us on Instagram.
+
+Thank you for your query. Our support team has received your message and will get back to you with a detailed response shortly. In the meantime, you can visit our FAQ at: https://help.beastlife.com/faq for quick answers to common questions.
+
+Quick answer from FAQ:
+Q: How can I track my order?
+A: You can track your order from the order history page or via the tracking link sent by SMS/email.
+
+Feel free to DM us anytime.",0,N/A,2026-03-21T21:27:44.958710
+Q038,REF-6EE4A5,Website Chat,Is there a loyalty or rewards program?,Delivery Delay,0.3991,Medium,False,Ticket Creation,Low,24h,72h,"Hello! Thanks for contacting us on our website.
+
+Thank you for reaching out. We've created a support ticket for your query (Ref: REF-6EE4A5). A dedicated agent will respond within the SLA window.
+
+Is there anything else I can help you with today?",0,TKT-45903224,2026-03-21T21:27:44.962987
+Q039,REF-7D08B9,WhatsApp,Are there any ongoing discounts or offers?,General Inquiry,0.6138,High,False,Auto-Reply,Low,24h,72h,"Hi! Thanks for messaging us on WhatsApp.
+
+Thank you for your query. Our support team has received your message and will get back to you with a detailed response shortly. In the meantime, you can visit our FAQ at: https://help.beastlife.com/faq for quick answers to common questions.
+
+Quick answer from FAQ:
+Q: What payment methods are supported?
+A: We support UPI, cards, net banking, and major wallets where available.
+
+Reply anytime - we're here 24/7.",0,N/A,2026-03-21T21:27:44.964661
+Q040,REF-11C057,Email,How do I apply a coupon code at checkout?,General Inquiry,0.6143,High,False,Auto-Reply,Low,24h,72h,"Dear Customer,
+
+Thank you for reaching out via email.
+
+Thank you for your query. Our support team has received your message and will get back to you with a detailed response shortly. In the meantime, you can visit our FAQ at: https://help.beastlife.com/faq for quick answers to common questions.
+
+Quick answer from FAQ:
+Q: How can I track my order?
+A: You can track your order from the order history page or via the tracking link sent by SMS/email.
+
+Best regards,
+Customer Support Team
+support@beastlife.com",0,N/A,2026-03-21T21:27:44.965568
+Q041,REF-26B3B4,WhatsApp,My payment failed but money was deducted. Please help!,Payment Issue,0.7114,High,True,Auto-Reply,High,1h,4h,"Hi! Thanks for messaging us on WhatsApp.
+
+We're sorry to hear about the payment issue you've experienced. Our payment team has been alerted and is investigating this urgently. If an amount was deducted, it will be automatically refunded within 3-5 business days. Your transaction reference will be shared via email within 2 hours.
+
+Reply anytime - we're here 24/7.",0,N/A,2026-03-21T21:27:44.966461
+Q042,REF-787448,Email,I was charged twice for the same order. Please refund one.,Payment Issue,0.672,High,False,Auto-Reply,High,1h,4h,"Dear Customer,
+
+Thank you for reaching out via email.
+
+We're sorry to hear about the payment issue you've experienced. Our payment team has been alerted and is investigating this urgently. If an amount was deducted, it will be automatically refunded within 3-5 business days. Your transaction reference will be shared via email within 2 hours.
+
+Best regards,
+Customer Support Team
+support@beastlife.com",0,N/A,2026-03-21T21:27:44.967298
+Q043,REF-9D09C3,Instagram DM,Transaction failed but amount got cut from my account.,Payment Issue,0.7043,High,False,Auto-Reply,High,1h,4h,"Hey! Thanks for DMing us on Instagram.
+
+We're sorry to hear about the payment issue you've experienced. Our payment team has been alerted and is investigating this urgently. If an amount was deducted, it will be automatically refunded within 3-5 business days. Your transaction reference will be shared via email within 2 hours.
+
+Feel free to DM us anytime.",0,N/A,2026-03-21T21:27:44.968112
+Q044,REF-313C39,Website Chat,Why is my UPI payment not going through?,Delivery Delay,0.3078,Medium,False,Ticket Creation,Medium,4h,24h,"Hello! Thanks for contacting us on our website.
+
+Thank you for reaching out. We've created a support ticket for your query (Ref: REF-313C39). A dedicated agent will respond within the SLA window.
+
+Is there anything else I can help you with today?",0,TKT-F7A4CEC3,2026-03-21T21:27:44.973796
+Q045,REF-E1FB2D,WhatsApp,Card declined during checkout. But the order doesn't show.,Payment Issue,0.6082,High,False,Auto-Reply,High,1h,4h,"Hi! Thanks for messaging us on WhatsApp.
+
+We're sorry to hear about the payment issue you've experienced. Our payment team has been alerted and is investigating this urgently. If an amount was deducted, it will be automatically refunded within 3-5 business days. Your transaction reference will be shared via email within 2 hours.
+
+Reply anytime - we're here 24/7.",0,N/A,2026-03-21T21:27:44.975372
+Q046,REF-D0208F,Email,EMI payment not processed correctly for order #33210.,Payment Issue,0.6786,High,False,Auto-Reply,High,1h,4h,"Dear Customer,
+
+Thank you for reaching out via email.
+
+We're sorry to hear about the payment issue you've experienced. Our payment team has been alerted and is investigating this urgently. If an amount was deducted, it will be automatically refunded within 3-5 business days. Your transaction reference will be shared via email within 2 hours.
+
+Best regards,
+Customer Support Team
+support@beastlife.com",0,N/A,2026-03-21T21:27:44.978373
+Q047,REF-7A4EA2,Instagram DM,I can't add my credit card on the app.,Payment Issue,0.5682,High,False,Auto-Reply,Medium,4h,24h,"Hey! Thanks for DMing us on Instagram.
+
+We're sorry to hear about the payment issue you've experienced. Our payment team has been alerted and is investigating this urgently. If an amount was deducted, it will be automatically refunded within 3-5 business days. Your transaction reference will be shared via email within 2 hours.
+
+Feel free to DM us anytime.",0,N/A,2026-03-21T21:27:44.980316
+Q048,REF-AFA0C7,Website Chat,Payment gateway is showing error repeatedly.,Payment Issue,0.6748,High,False,Auto-Reply,Medium,4h,24h,"Hello! Thanks for contacting us on our website.
+
+We're sorry to hear about the payment issue you've experienced. Our payment team has been alerted and is investigating this urgently. If an amount was deducted, it will be automatically refunded within 3-5 business days. Your transaction reference will be shared via email within 2 hours.
+
+Is there anything else I can help you with today?",0,N/A,2026-03-21T21:27:44.982025
+Q049,REF-E64D83,WhatsApp,I paid via net banking but order not confirmed.,Payment Issue,0.2378,Low,False,Human Escalation,High,1h,4h,"Hi! Thanks for messaging us on WhatsApp.
+
+Your query requires personalized attention. We're connecting you with a live support agent right now. Estimated wait time: 3-5 minutes. Your reference: REF-E64D83.
+
+Reply anytime - we're here 24/7.",0,TKT-762DA0C6,2026-03-21T21:27:44.989802
+Q050,REF-ED6E2E,Email,My wallet balance got deducted but no order was placed.,Payment Issue,0.6947,High,True,Auto-Reply,High,1h,4h,"Dear Customer,
+
+Thank you for reaching out via email.
+
+We're sorry to hear about the payment issue you've experienced. Our payment team has been alerted and is investigating this urgently. If an amount was deducted, it will be automatically refunded within 3-5 business days. Your transaction reference will be shared via email within 2 hours.
+
+Best regards,
+Customer Support Team
+support@beastlife.com",0,N/A,2026-03-21T21:27:44.991416
+Q051,REF-9DC307,WhatsApp,The product I received is broken. This is terrible quality!,Product Complaint,0.688,High,True,Auto-Reply,High,1h,4h,"Hi! Thanks for messaging us on WhatsApp.
+
+We sincerely apologize for the experience with your product. This is not the standard we hold ourselves to. Please share photos/videos of the issue by replying to this message, and we will arrange an immediate replacement or full refund — whichever you prefer.
+
+Reply anytime - we're here 24/7.",0,N/A,2026-03-21T21:27:44.992598
+Q052,REF-463DFE,Email,Wrong item delivered. Ordered shirt but got pants.,Product Complaint,0.6528,High,True,Auto-Reply,High,1h,4h,"Dear Customer,
+
+Thank you for reaching out via email.
+
+We sincerely apologize for the experience with your product. This is not the standard we hold ourselves to. Please share photos/videos of the issue by replying to this message, and we will arrange an immediate replacement or full refund — whichever you prefer.
+
+Best regards,
+Customer Support Team
+support@beastlife.com",0,N/A,2026-03-21T21:27:44.994785
+Q053,REF-EA43BD,Instagram DM,Product looks nothing like the photo on the website.,Product Complaint,0.6566,High,False,Auto-Reply,High,1h,4h,"Hey! Thanks for DMing us on Instagram.
+
+We sincerely apologize for the experience with your product. This is not the standard we hold ourselves to. Please share photos/videos of the issue by replying to this message, and we will arrange an immediate replacement or full refund — whichever you prefer.
+
+Feel free to DM us anytime.",0,N/A,2026-03-21T21:27:44.996312
+Q054,REF-D4A65E,Website Chat,The product stopped working after just one day.,Product Complaint,0.6707,High,False,Auto-Reply,High,1h,4h,"Hello! Thanks for contacting us on our website.
+
+We sincerely apologize for the experience with your product. This is not the standard we hold ourselves to. Please share photos/videos of the issue by replying to this message, and we will arrange an immediate replacement or full refund — whichever you prefer.
+
+Is there anything else I can help you with today?",0,N/A,2026-03-21T21:27:44.997872
+Q055,REF-CDB37A,WhatsApp,Package arrived but item inside was missing.,Product Complaint,0.6405,High,True,Auto-Reply,High,1h,4h,"Hi! Thanks for messaging us on WhatsApp.
+
+We sincerely apologize for the experience with your product. This is not the standard we hold ourselves to. Please share photos/videos of the issue by replying to this message, and we will arrange an immediate replacement or full refund — whichever you prefer.
+
+Reply anytime - we're here 24/7.",0,N/A,2026-03-21T21:27:44.998819
+Q056,REF-9482FB,Email,Size mentioned was L but product received is S.,Product Complaint,0.6692,High,False,Auto-Reply,Medium,4h,24h,"Dear Customer,
+
+Thank you for reaching out via email.
+
+We sincerely apologize for the experience with your product. This is not the standard we hold ourselves to. Please share photos/videos of the issue by replying to this message, and we will arrange an immediate replacement or full refund — whichever you prefer.
+
+Best regards,
+Customer Support Team
+support@beastlife.com",0,N/A,2026-03-21T21:27:44.999706
+Q057,REF-5E46BB,Instagram DM,Very poor packaging. Product was damaged in transit.,Product Complaint,0.4527,Medium,False,Ticket Creation,High,1h,4h,"Hey! Thanks for DMing us on Instagram.
+
+Thank you for reaching out. We've created a support ticket for your query (Ref: REF-5E46BB). A dedicated agent will respond within the SLA window.
+
+Feel free to DM us anytime.",0,TKT-99DB458B,2026-03-21T21:27:45.003423
+Q058,REF-A9565F,Website Chat,The color of the product is completely different from what I ordered.,Product Complaint,0.6675,High,False,Auto-Reply,Medium,4h,24h,"Hello! Thanks for contacting us on our website.
+
+We sincerely apologize for the experience with your product. This is not the standard we hold ourselves to. Please share photos/videos of the issue by replying to this message, and we will arrange an immediate replacement or full refund — whichever you prefer.
+
+Is there anything else I can help you with today?",0,N/A,2026-03-21T21:27:45.004713
+Q059,REF-2323C6,WhatsApp,Product has a manufacturing defect. What should I do?,Product Complaint,0.6338,High,False,Auto-Reply,High,1h,4h,"Hi! Thanks for messaging us on WhatsApp.
+
+We sincerely apologize for the experience with your product. This is not the standard we hold ourselves to. Please share photos/videos of the issue by replying to this message, and we will arrange an immediate replacement or full refund — whichever you prefer.
+
+Reply anytime - we're here 24/7.",0,N/A,2026-03-21T21:27:45.005854
+Q060,REF-900291,Email,The electronic item came without any charger in the box.,Product Complaint,0.6481,High,False,Auto-Reply,Medium,4h,24h,"Dear Customer,
+
+Thank you for reaching out via email.
+
+We sincerely apologize for the experience with your product. This is not the standard we hold ourselves to. Please share photos/videos of the issue by replying to this message, and we will arrange an immediate replacement or full refund — whichever you prefer.
+
+Best regards,
+Customer Support Team
+support@beastlife.com",0,N/A,2026-03-21T21:27:45.006857
+Q061,REF-31DA61,WhatsApp,Mera order abhi tak nahi aaya. Kab aayega?,Order Status,0.6759,High,False,Auto-Reply,High,1h,4h,"Hi! Thanks for messaging us on WhatsApp.
+
+Your order is currently being processed by our fulfillment team. You can track your order in real-time at: https://track.beastlife.com/REF-31DA61. Expected delivery: 2-5 business days. If you need further assistance, our team is available 24/7.
+
+Reply anytime - we're here 24/7.",0,N/A,2026-03-21T21:27:45.007753
+Q062,REF-D8975E,WhatsApp,Paisa cut ho gaya lekin order nahi hua.,Payment Issue,0.6769,High,False,Auto-Reply,High,1h,4h,"Hi! Thanks for messaging us on WhatsApp.
+
+We're sorry to hear about the payment issue you've experienced. Our payment team has been alerted and is investigating this urgently. If an amount was deducted, it will be automatically refunded within 3-5 business days. Your transaction reference will be shared via email within 2 hours.
+
+Reply anytime - we're here 24/7.",0,N/A,2026-03-21T21:27:45.008584
+Q063,REF-1D3DD5,Instagram DM,Mujhe refund chahiye. Product kharab tha.,Refund Request,0.6897,High,False,Auto-Reply,High,1h,4h,"Hey! Thanks for DMing us on Instagram.
+
+We have successfully received your refund request (Reference: REF-1D3DD5). Your refund of the debited amount will be credited to your original payment method within 5-7 business days. You will receive a confirmation email once the refund has been initiated.
+
+Feel free to DM us anytime.",0,N/A,2026-03-21T21:27:45.009412
+Q064,REF-FE3AFC,Website Chat,Delivery mein itni der kyun lag rahi hai?,Delivery Delay,0.6699,High,False,Auto-Reply,Medium,4h,24h,"Hello! Thanks for contacting us on our website.
+
+We sincerely apologize for the inconvenience caused by the delivery delay. Our logistics team has been notified and is actively working to expedite your shipment. You will receive a detailed update within the next 24 hours. As a token of apology, a discount coupon has been added to your account.
+
+Is there anything else I can help you with today?",0,N/A,2026-03-21T21:27:45.011807
+Q065,REF-07AFCA,Email,Product bilkul galat aaya hai. Please isko wapas le lo.,Product Complaint,0.6414,High,False,Auto-Reply,High,1h,4h,"Dear Customer,
+
+Thank you for reaching out via email.
+
+We sincerely apologize for the experience with your product. This is not the standard we hold ourselves to. Please share photos/videos of the issue by replying to this message, and we will arrange an immediate replacement or full refund — whichever you prefer.
+
+Best regards,
+Customer Support Team
+support@beastlife.com",0,N/A,2026-03-21T21:27:45.013247
+Q066,REF-44EBDC,WhatsApp,Delivery kab tak hogi mere order ki?,Order Status,0.6773,High,False,Auto-Reply,Low,24h,72h,"Hi! Thanks for messaging us on WhatsApp.
+
+Your order is currently being processed by our fulfillment team. You can track your order in real-time at: https://track.beastlife.com/REF-44EBDC. Expected delivery: 2-5 business days. If you need further assistance, our team is available 24/7.
+
+Reply anytime - we're here 24/7.",0,N/A,2026-03-21T21:27:45.014792
+Q067,REF-747B21,Instagram DM,Mujhe apna address change karna hai.,General Inquiry,0.603,High,False,Auto-Reply,Low,24h,72h,"Hey! Thanks for DMing us on Instagram.
+
+Thank you for your query. Our support team has received your message and will get back to you with a detailed response shortly. In the meantime, you can visit our FAQ at: https://help.beastlife.com/faq for quick answers to common questions.
+
+Feel free to DM us anytime.",0,N/A,2026-03-21T21:27:45.015685
+Q068,REF-176BAD,WhatsApp,My order still shows processing after 4 days.,Order Status,0.6905,High,False,Auto-Reply,Medium,4h,24h,"Hi! Thanks for messaging us on WhatsApp.
+
+Your order is currently being processed by our fulfillment team. You can track your order in real-time at: https://track.beastlife.com/REF-176BAD. Expected delivery: 2-5 business days. If you need further assistance, our team is available 24/7.
+
+Reply anytime - we're here 24/7.",0,N/A,2026-03-21T21:27:45.016681
+Q069,REF-28310B,Email,Can I reschedule my delivery to next week?,General Inquiry,0.6045,High,False,Auto-Reply,Low,24h,72h,"Dear Customer,
+
+Thank you for reaching out via email.
+
+Thank you for your query. Our support team has received your message and will get back to you with a detailed response shortly. In the meantime, you can visit our FAQ at: https://help.beastlife.com/faq for quick answers to common questions.
+
+Quick answer from FAQ:
+Q: Do you offer free shipping?
+A: Yes, we offer free shipping on eligible orders above the minimum cart value shown at checkout.
+
+Best regards,
+Customer Support Team
+support@beastlife.com",0,N/A,2026-03-21T21:27:45.017622
+Q070,REF-EB5419,Website Chat,Is COD available for my PIN code 560001?,General Inquiry,0.5963,High,False,Auto-Reply,Low,24h,72h,"Hello! Thanks for contacting us on our website.
+
+Thank you for your query. Our support team has received your message and will get back to you with a detailed response shortly. In the meantime, you can visit our FAQ at: https://help.beastlife.com/faq for quick answers to common questions.
+
+Is there anything else I can help you with today?",0,N/A,2026-03-21T21:27:45.018497
+Q071,REF-402BDE,WhatsApp,Refund approved but not received after 7 days.,Refund Request,0.2587,Low,False,Human Escalation,High,1h,4h,"Hi! Thanks for messaging us on WhatsApp.
+
+Your query requires personalized attention. We're connecting you with a live support agent right now. Estimated wait time: 3-5 minutes. Your reference: REF-402BDE.
+
+Reply anytime - we're here 24/7.",0,TKT-4444BEB4,2026-03-21T21:27:45.021436
+Q072,REF-74C96B,Instagram DM,How do I track my order?,General Inquiry,0.3384,Medium,False,Ticket Creation,Low,24h,72h,"Hey! Thanks for DMing us on Instagram.
+
+Thank you for reaching out. We've created a support ticket for your query (Ref: REF-74C96B). A dedicated agent will respond within the SLA window.
+
+Quick answer from FAQ:
+Q: How can I track my order?
+A: You can track your order from the order history page or via the tracking link sent by SMS/email.
+
+Feel free to DM us anytime.",0,TKT-44DDCD6D,2026-03-21T21:27:45.025240
+Q073,REF-5049C2,Email,My address was wrongly entered. Can you update it?,General Inquiry,0.6172,High,False,Auto-Reply,Medium,4h,24h,"Dear Customer,
+
+Thank you for reaching out via email.
+
+Thank you for your query. Our support team has received your message and will get back to you with a detailed response shortly. In the meantime, you can visit our FAQ at: https://help.beastlife.com/faq for quick answers to common questions.
+
+Quick answer from FAQ:
+Q: Do you offer free shipping?
+A: Yes, we offer free shipping on eligible orders above the minimum cart value shown at checkout.
+
+Best regards,
+Customer Support Team
+support@beastlife.com",0,N/A,2026-03-21T21:27:45.026983
+Q074,REF-ECC24E,Website Chat,I want to cancel my order before it ships.,General Inquiry,0.5602,High,False,Auto-Reply,Medium,4h,24h,"Hello! Thanks for contacting us on our website.
+
+Thank you for your query. Our support team has received your message and will get back to you with a detailed response shortly. In the meantime, you can visit our FAQ at: https://help.beastlife.com/faq for quick answers to common questions.
+
+Quick answer from FAQ:
+Q: How can I track my order?
+A: You can track your order from the order history page or via the tracking link sent by SMS/email.
+
+Is there anything else I can help you with today?",0,N/A,2026-03-21T21:27:45.029422
+Q075,REF-E2C35D,WhatsApp,Product is amazing! But delivery was a bit late.,Delivery Delay,0.6877,High,False,Auto-Reply,Low,24h,72h,"Hi! Thanks for messaging us on WhatsApp.
+
+We sincerely apologize for the inconvenience caused by the delivery delay. Our logistics team has been notified and is actively working to expedite your shipment. You will receive a detailed update within the next 24 hours. As a token of apology, a discount coupon has been added to your account.
+
+Reply anytime - we're here 24/7.",0,N/A,2026-03-21T21:27:45.031055
+Q076,REF-0E43E1,Email,What payment methods do you accept?,General Inquiry,0.6637,High,False,Auto-Reply,Low,24h,72h,"Dear Customer,
+
+Thank you for reaching out via email.
+
+Thank you for your query. Our support team has received your message and will get back to you with a detailed response shortly. In the meantime, you can visit our FAQ at: https://help.beastlife.com/faq for quick answers to common questions.
+
+Quick answer from FAQ:
+Q: What payment methods are supported?
+A: We support UPI, cards, net banking, and major wallets where available.
+
+Best regards,
+Customer Support Team
+support@beastlife.com",0,N/A,2026-03-21T21:27:45.032077
+Q077,REF-2DB2AE,Instagram DM,My order shows delivered but nothing found.,Order Status,0.2868,Low,False,Human Escalation,High,1h,4h,"Hey! Thanks for DMing us on Instagram.
+
+Your query requires personalized attention. We're connecting you with a live support agent right now. Estimated wait time: 3-5 minutes. Your reference: REF-2DB2AE.
+
+Feel free to DM us anytime.",0,TKT-8A22FF2A,2026-03-21T21:27:45.036358
+Q078,REF-AE41B3,Website Chat,Received broken seal on the product box.,Product Complaint,0.5943,High,True,Auto-Reply,High,1h,4h,"Hello! Thanks for contacting us on our website.
+
+We sincerely apologize for the experience with your product. This is not the standard we hold ourselves to. Please share photos/videos of the issue by replying to this message, and we will arrange an immediate replacement or full refund — whichever you prefer.
+
+Is there anything else I can help you with today?",0,N/A,2026-03-21T21:27:45.037470
+Q079,REF-9AAFB6,WhatsApp,I got someone else's order. Please fix this.,Payment Issue,0.3154,Medium,False,Ticket Creation,High,1h,4h,"Hi! Thanks for messaging us on WhatsApp.
+
+Thank you for reaching out. We've created a support ticket for your query (Ref: REF-9AAFB6). A dedicated agent will respond within the SLA window.
+
+Reply anytime - we're here 24/7.",0,TKT-607BCBED,2026-03-21T21:27:45.040383
+Q080,REF-6B2528,Email,Please provide invoice for my order #20391.,General Inquiry,0.5555,High,False,Auto-Reply,Low,24h,72h,"Dear Customer,
+
+Thank you for reaching out via email.
+
+Thank you for your query. Our support team has received your message and will get back to you with a detailed response shortly. In the meantime, you can visit our FAQ at: https://help.beastlife.com/faq for quick answers to common questions.
+
+Quick answer from FAQ:
+Q: How can I track my order?
+A: You can track your order from the order history page or via the tracking link sent by SMS/email.
+
+Best regards,
+Customer Support Team
+support@beastlife.com",0,N/A,2026-03-21T21:27:45.041841
+Q081,REF-38D6EF,WhatsApp,Payment is showing pending on my end.,Payment Issue,0.2916,Low,False,Human Escalation,Medium,4h,24h,"Hi! Thanks for messaging us on WhatsApp.
+
+Your query requires personalized attention. We're connecting you with a live support agent right now. Estimated wait time: 3-5 minutes. Your reference: REF-38D6EF.
+
+Reply anytime - we're here 24/7.",0,TKT-74B07A51,2026-03-21T21:27:45.047849
+Q082,REF-551719,Instagram DM,I got charged extra compared to the price shown.,Payment Issue,0.689,High,False,Auto-Reply,High,1h,4h,"Hey! Thanks for DMing us on Instagram.
+
+We're sorry to hear about the payment issue you've experienced. Our payment team has been alerted and is investigating this urgently. If an amount was deducted, it will be automatically refunded within 3-5 business days. Your transaction reference will be shared via email within 2 hours.
+
+Feel free to DM us anytime.",0,N/A,2026-03-21T21:27:45.049042
+Q083,REF-3DDBB7,Email,I need help with applying store credits.,General Inquiry,0.5991,High,False,Auto-Reply,Low,24h,72h,"Dear Customer,
+
+Thank you for reaching out via email.
+
+Thank you for your query. Our support team has received your message and will get back to you with a detailed response shortly. In the meantime, you can visit our FAQ at: https://help.beastlife.com/faq for quick answers to common questions.
+
+Best regards,
+Customer Support Team
+support@beastlife.com",0,N/A,2026-03-21T21:27:45.049877
+Q084,REF-646DDC,Website Chat,Product smells strange. Is it authentic?,Product Complaint,0.6432,High,False,Auto-Reply,Medium,4h,24h,"Hello! Thanks for contacting us on our website.
+
+We sincerely apologize for the experience with your product. This is not the standard we hold ourselves to. Please share photos/videos of the issue by replying to this message, and we will arrange an immediate replacement or full refund — whichever you prefer.
+
+Is there anything else I can help you with today?",0,N/A,2026-03-21T21:27:45.050676
+Q085,REF-F7B52A,WhatsApp,Tracking link is not working.,Delivery Delay,0.2477,Low,False,Human Escalation,Medium,4h,24h,"Hi! Thanks for messaging us on WhatsApp.
+
+Your query requires personalized attention. We're connecting you with a live support agent right now. Estimated wait time: 3-5 minutes. Your reference: REF-F7B52A.
+
+Reply anytime - we're here 24/7.",0,TKT-81BF06A0,2026-03-21T21:27:45.053487
+Q086,REF-646AF2,Email,My order is stuck at the warehouse.,Delivery Delay,0.6395,High,False,Auto-Reply,High,1h,4h,"Dear Customer,
+
+Thank you for reaching out via email.
+
+We sincerely apologize for the inconvenience caused by the delivery delay. Our logistics team has been notified and is actively working to expedite your shipment. You will receive a detailed update within the next 24 hours. As a token of apology, a discount coupon has been added to your account.
+
+Best regards,
+Customer Support Team
+support@beastlife.com",0,N/A,2026-03-21T21:27:45.054904
+Q087,REF-F65576,Instagram DM,I ordered the wrong size. Can I exchange?,General Inquiry,0.5921,High,False,Auto-Reply,Medium,4h,24h,"Hey! Thanks for DMing us on Instagram.
+
+Thank you for your query. Our support team has received your message and will get back to you with a detailed response shortly. In the meantime, you can visit our FAQ at: https://help.beastlife.com/faq for quick answers to common questions.
+
+Quick answer from FAQ:
+Q: How can I track my order?
+A: You can track your order from the order history page or via the tracking link sent by SMS/email.
+
+Feel free to DM us anytime.",0,N/A,2026-03-21T21:27:45.055832
+Q088,REF-46B72B,Website Chat,Do you ship internationally?,General Inquiry,0.6871,High,False,Auto-Reply,Low,24h,72h,"Hello! Thanks for contacting us on our website.
+
+Thank you for your query. Our support team has received your message and will get back to you with a detailed response shortly. In the meantime, you can visit our FAQ at: https://help.beastlife.com/faq for quick answers to common questions.
+
+Quick answer from FAQ:
+Q: Do you offer free shipping?
+A: Yes, we offer free shipping on eligible orders above the minimum cart value shown at checkout.
+
+Is there anything else I can help you with today?",0,N/A,2026-03-21T21:27:45.056609
+Q089,REF-455A66,WhatsApp,Refund has not been initiated for 2 weeks.,Refund Request,0.6919,High,False,Auto-Reply,High,1h,4h,"Hi! Thanks for messaging us on WhatsApp.
+
+We have successfully received your refund request (Reference: REF-455A66). Your refund of the debited amount will be credited to your original payment method within 5-7 business days. You will receive a confirmation email once the refund has been initiated.
+
+Reply anytime - we're here 24/7.",0,N/A,2026-03-21T21:27:45.057393
+Q090,REF-7A7088,Email,I want to lodge a formal complaint about the delivery partner.,Product Complaint,0.5983,High,False,Auto-Reply,High,1h,4h,"Dear Customer,
+
+Thank you for reaching out via email.
+
+We sincerely apologize for the experience with your product. This is not the standard we hold ourselves to. Please share photos/videos of the issue by replying to this message, and we will arrange an immediate replacement or full refund — whichever you prefer.
+
+Best regards,
+Customer Support Team
+support@beastlife.com",0,N/A,2026-03-21T21:27:45.058193
+Q091,REF-EEC801,WhatsApp,Can I add items to my existing order?,General Inquiry,0.342,Medium,False,Ticket Creation,Low,24h,72h,"Hi! Thanks for messaging us on WhatsApp.
+
+Thank you for reaching out. We've created a support ticket for your query (Ref: REF-EEC801). A dedicated agent will respond within the SLA window.
+
+Quick answer from FAQ:
+Q: How can I track my order?
+A: You can track your order from the order history page or via the tracking link sent by SMS/email.
+
+Reply anytime - we're here 24/7.",0,TKT-C24A56AB,2026-03-21T21:27:45.062814
+Q092,REF-4FEB4C,Instagram DM,The seller is not responding to my messages.,Delivery Delay,0.2464,Low,False,Human Escalation,Medium,4h,24h,"Hey! Thanks for DMing us on Instagram.
+
+Your query requires personalized attention. We're connecting you with a live support agent right now. Estimated wait time: 3-5 minutes. Your reference: REF-4FEB4C.
+
+Feel free to DM us anytime.",0,TKT-03741A7C,2026-03-21T21:27:45.066737
+Q093,REF-84C203,Email,I received used/second-hand item instead of new.,Product Complaint,0.5379,High,False,Auto-Reply,High,1h,4h,"Dear Customer,
+
+Thank you for reaching out via email.
+
+We sincerely apologize for the experience with your product. This is not the standard we hold ourselves to. Please share photos/videos of the issue by replying to this message, and we will arrange an immediate replacement or full refund — whichever you prefer.
+
+Best regards,
+Customer Support Team
+support@beastlife.com",0,N/A,2026-03-21T21:27:45.068095
+Q094,REF-6ED64C,Website Chat,Can I get a replacement instead of refund?,Refund Request,0.7105,High,False,Auto-Reply,Medium,4h,24h,"Hello! Thanks for contacting us on our website.
+
+We have successfully received your refund request (Reference: REF-6ED64C). Your refund of the debited amount will be credited to your original payment method within 5-7 business days. You will receive a confirmation email once the refund has been initiated.
+
+Is there anything else I can help you with today?",0,N/A,2026-03-21T21:27:45.068959
+Q095,REF-67ADA3,WhatsApp,Product not as described. Very disappointed.,Product Complaint,0.6509,High,False,Auto-Reply,High,1h,4h,"Hi! Thanks for messaging us on WhatsApp.
+
+We sincerely apologize for the experience with your product. This is not the standard we hold ourselves to. Please share photos/videos of the issue by replying to this message, and we will arrange an immediate replacement or full refund — whichever you prefer.
+
+Reply anytime - we're here 24/7.",0,N/A,2026-03-21T21:27:45.069770
+Q096,REF-68AFBE,Email,Ordered 2 items but only 1 was delivered.,Product Complaint,0.6444,High,False,Auto-Reply,High,1h,4h,"Dear Customer,
+
+Thank you for reaching out via email.
+
+We sincerely apologize for the experience with your product. This is not the standard we hold ourselves to. Please share photos/videos of the issue by replying to this message, and we will arrange an immediate replacement or full refund — whichever you prefer.
+
+Best regards,
+Customer Support Team
+support@beastlife.com",0,N/A,2026-03-21T21:27:45.070529
+Q097,REF-517BB2,Instagram DM,Is there a way to speed up my delivery?,Delivery Delay,0.6932,High,False,Auto-Reply,Low,24h,72h,"Hey! Thanks for DMing us on Instagram.
+
+We sincerely apologize for the inconvenience caused by the delivery delay. Our logistics team has been notified and is actively working to expedite your shipment. You will receive a detailed update within the next 24 hours. As a token of apology, a discount coupon has been added to your account.
+
+Feel free to DM us anytime.",0,N/A,2026-03-21T21:27:45.071281
+Q098,REF-02CE52,Website Chat,I'm unable to place an order. App crashes.,General Inquiry,0.5516,High,False,Auto-Reply,Medium,4h,24h,"Hello! Thanks for contacting us on our website.
+
+Thank you for your query. Our support team has received your message and will get back to you with a detailed response shortly. In the meantime, you can visit our FAQ at: https://help.beastlife.com/faq for quick answers to common questions.
+
+Quick answer from FAQ:
+Q: How can I track my order?
+A: You can track your order from the order history page or via the tracking link sent by SMS/email.
+
+Is there anything else I can help you with today?",0,N/A,2026-03-21T21:27:45.072077
+Q099,REF-7389F8,WhatsApp,Price was different at checkout than listed.,Payment Issue,0.6827,High,False,Auto-Reply,Medium,4h,24h,"Hi! Thanks for messaging us on WhatsApp.
+
+We're sorry to hear about the payment issue you've experienced. Our payment team has been alerted and is investigating this urgently. If an amount was deducted, it will be automatically refunded within 3-5 business days. Your transaction reference will be shared via email within 2 hours.
+
+Reply anytime - we're here 24/7.",0,N/A,2026-03-21T21:27:45.073093
+Q100,REF-1739EB,Email,Great service overall! My order came on time.,General Inquiry,0.5858,High,False,Auto-Reply,Low,24h,72h,"Dear Customer,
+
+Thank you for reaching out via email.
+
+Thank you for your query. Our support team has received your message and will get back to you with a detailed response shortly. In the meantime, you can visit our FAQ at: https://help.beastlife.com/faq for quick answers to common questions.
+
+Quick answer from FAQ:
+Q: How can I track my order?
+A: You can track your order from the order history page or via the tracking link sent by SMS/email.
+
+Best regards,
+Customer Support Team
+support@beastlife.com",0,N/A,2026-03-21T21:27:45.074181

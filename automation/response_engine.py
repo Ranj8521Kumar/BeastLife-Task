@@ -68,11 +68,40 @@ CHANNEL_GREETINGS = {
 }
 
 CHANNEL_CLOSINGS = {
-    "WhatsApp"    : "\n\nReply anytime — we're here 24/7! 💬",
+    "WhatsApp"    : "\n\nReply anytime - we're here 24/7.",
     "Email"       : "\n\nBest regards,\nCustomer Support Team\nsupport@beastlife.com",
-    "Instagram DM": "\n\nFeel free to DM us anytime! 📩",
+    "Instagram DM": "\n\nFeel free to DM us anytime.",
     "Website Chat": "\n\nIs there anything else I can help you with today?",
 }
+
+# FAQ knowledge base for dynamic matching in General Inquiry flows.
+FAQ_KB = [
+    {
+        "question": "Do you offer free shipping?",
+        "answer": "Yes, we offer free shipping on eligible orders above the minimum cart value shown at checkout.",
+        "keywords": {"free", "shipping", "delivery", "charges"},
+    },
+    {
+        "question": "How can I track my order?",
+        "answer": "You can track your order from the order history page or via the tracking link sent by SMS/email.",
+        "keywords": {"track", "order", "status", "where"},
+    },
+    {
+        "question": "How long does delivery take?",
+        "answer": "Standard delivery typically takes 2-5 business days depending on location.",
+        "keywords": {"delivery", "time", "days", "arrive"},
+    },
+    {
+        "question": "How can I request a refund?",
+        "answer": "You can request a refund from the orders page or by contacting support with your order ID.",
+        "keywords": {"refund", "return", "money", "back"},
+    },
+    {
+        "question": "What payment methods are supported?",
+        "answer": "We support UPI, cards, net banking, and major wallets where available.",
+        "keywords": {"payment", "methods", "upi", "card", "wallet"},
+    },
+]
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -242,13 +271,36 @@ class ResponseEngine:
         lower = raw_text.lower()
         return any(kw in lower for kw in URGENT_OVERRIDE_KEYWORDS)
 
+    def _tokenize(self, text: str) -> set:
+        cleaned = self._clean(text)
+        return {w for w in cleaned.split() if len(w) > 2}
+
+    def _match_faq(self, raw_query: str):
+        """
+        Lightweight FAQ matcher:
+        - token overlap between query and FAQ keywords/question text
+        - returns best FAQ dict and score, or (None, 0)
+        """
+        query_tokens = self._tokenize(raw_query)
+        best_item = None
+        best_score = 0
+        for item in FAQ_KB:
+            faq_tokens = set(item["keywords"]) | self._tokenize(item["question"])
+            score = len(query_tokens.intersection(faq_tokens))
+            if score > best_score:
+                best_score = score
+                best_item = item
+        return best_item, best_score
+
     # ── Build personalized reply ─────────────────────────────────
     def _build_reply(self, category: str, channel: str,
-                     ref_id: str, action: str) -> str:
+                     ref_id: str, action: str, raw_query: str = "",
+                     conversation_history: list = None) -> str:
         greeting = CHANNEL_GREETINGS.get(channel, "Hello!")
         closing  = CHANNEL_CLOSINGS.get(channel, "\n\nThank you.")
         template = AUTO_REPLY_TEMPLATES.get(category, {})
         body     = template.get("body", "We have received your query and will respond shortly.")
+        conversation_history = conversation_history or []
 
         # Fill placeholders
         body = body.replace("[ref_id]", ref_id)
@@ -256,25 +308,47 @@ class ResponseEngine:
         body = body.replace("[faq_link]", "https://help.beastlife.com/faq")
         body = body.replace("[amount]", "the debited amount")
 
+        # Smart FAQ injection for General Inquiry
+        faq_item, faq_score = self._match_faq(raw_query)
+        faq_block = ""
+        if category == "General Inquiry" and faq_item and faq_score >= 1:
+            faq_block = (
+                f"\n\nQuick answer from FAQ:\n"
+                f"Q: {faq_item['question']}\n"
+                f"A: {faq_item['answer']}"
+            )
+
+        # Chatbot-style context awareness (lightweight)
+        context_block = ""
+        if conversation_history:
+            recent_context = " | ".join(str(x)[:80] for x in conversation_history[-2:])
+            context_block = (
+                f"\n\nI checked your recent messages and will keep context in mind: "
+                f"{recent_context}"
+            )
+
         if action == "Auto-Reply":
-            return f"{greeting}\n\n{body}{closing}"
+            return f"{greeting}\n\n{body}{faq_block}{context_block}{closing}"
         elif action == "Ticket Creation":
             return (
                 f"{greeting}\n\nThank you for reaching out. "
                 f"We've created a support ticket for your query (Ref: {ref_id}). "
-                f"A dedicated agent will respond within the SLA window.{closing}"
+                f"A dedicated agent will respond within the SLA window."
+                f"{faq_block}{context_block}{closing}"
             )
         else:  # Human Escalation
             return (
                 f"{greeting}\n\nYour query requires personalized attention. "
                 f"We're connecting you with a live support agent right now. "
-                f"Estimated wait time: 3-5 minutes. Your reference: {ref_id}.{closing}"
+                f"Estimated wait time: 3-5 minutes. Your reference: {ref_id}."
+                f"{context_block}{closing}"
             )
 
     # ── MAIN ROUTING FUNCTION ────────────────────────────────────
     def process_query(self, query_id: str, raw_query: str,
                       channel: str = "Website Chat",
-                      priority: str = "Medium") -> dict:
+                      priority: str = "Medium",
+                      conversation_history: list = None) -> dict:
         """
         Process a single customer query end-to-end.
         Returns a full decision record.
@@ -306,7 +380,14 @@ class ResponseEngine:
         sla = SLA_CONFIG[effective_priority]
 
         # Build reply
-        reply = self._build_reply(category, channel, ref_id, action)
+        reply = self._build_reply(
+            category=category,
+            channel=channel,
+            ref_id=ref_id,
+            action=action,
+            raw_query=raw_query,
+            conversation_history=conversation_history,
+        )
 
         # Create ticket (for Medium + Low)
         ticket = None
@@ -337,6 +418,7 @@ class ResponseEngine:
             "sla_first_response": f"{sla['first_response']}h",
             "sla_resolution"    : f"{sla['resolution']}h",
             "auto_reply"        : reply,
+            "conversation_turns": len(conversation_history or []),
             "ticket_id"         : ticket["ticket_id"] if ticket else "N/A",
             "timestamp"         : datetime.datetime.now().isoformat(),
         }

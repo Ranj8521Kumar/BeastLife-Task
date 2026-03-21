@@ -4,65 +4,155 @@
   <meta charset="utf-8"/>
   <title>AI Customer Intelligence Dashboard</title>
   <style>
-    body { font-family: Arial, Helvetica, sans-serif; margin: 24px; color: #111; }
-    h1 { margin-bottom: 6px; }
-    .kpi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
-    .kpi { border: 1px solid #ddd; border-radius: 10px; padding: 12px; }
-    .kpi-label { font-size: 12px; color: #555; margin-bottom: 4px; }
-    .kpi-value { font-size: 22px; font-weight: bold; }
-    section { margin-top: 18px; padding-top: 6px; }
-    .chart { margin: 12px 0; }
-    img { max-width: 980px; width: 100%; border: 1px solid #eee; border-radius: 10px; padding: 8px; background: #fafafa; }
-    table { width: 100%; border-collapse: collapse; margin-top: 8px; }
-    th, td { border-bottom: 1px solid #eee; padding: 10px 8px; text-align: left; }
+    body { font-family: Arial, Helvetica, sans-serif; margin: 20px; color: #111; }
+    h1 { margin: 0 0 8px 0; }
+    h2 { margin: 0 0 8px 0; }
+    h3 { margin: 0 0 8px 0; font-size: 20px; }
+    .meta { margin: 4px 0 14px 0; }
+    section { margin-top: 16px; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: start; }
+    .panel { border: 1px solid #ececec; border-radius: 8px; padding: 10px; background: #fff; }
+    .chart { margin: 12px 0; border: 1px solid #ececec; border-radius: 8px; padding: 10px; background: #fff; }
+    table { width: 100%; border-collapse: collapse; margin-top: 6px; table-layout: fixed; }
+    th, td { border-bottom: 1px solid #eee; padding: 10px 8px; text-align: left; vertical-align: middle; }
+    th { font-weight: 600; }
     thead th { background: #f7f7f7; }
+    .num-col { text-align: right; width: 110px; }
+    .data-table td:nth-child(2), .data-table td:nth-child(3) { text-align: right; }
+    .data-table td:first-child { word-break: break-word; }
+    .bar-chart { display: grid; gap: 8px; }
+    .bar-row { display: grid; grid-template-columns: 210px 1fr 70px; gap: 10px; align-items: center; }
+    .bar-label { font-size: 13px; }
+    .bar-wrap { background: #eef2ff; border-radius: 999px; height: 16px; overflow: hidden; }
+    .bar-fill { background: #2563eb; height: 100%; border-radius: 999px; }
+    .bar-value { text-align: right; font-size: 13px; }
+    .line-chart { width: 100%; height: auto; display: block; background: #fafafa; border: 1px solid #eee; border-radius: 6px; }
+    .axis { stroke: #9ca3af; stroke-width: 1; }
+    .trend-line { fill: none; stroke: #2563eb; stroke-width: 2; }
+    .line-chart circle { fill: #2563eb; }
+    .axis-label { fill: #374151; font-size: 11px; }
+    .point-value { fill: #111827; font-size: 11px; }
+    @media (max-width: 900px) {
+      .grid-2 { grid-template-columns: 1fr; }
+      .bar-row { grid-template-columns: 1fr; }
+    }
     code { background: #f5f5f5; padding: 2px 6px; border-radius: 6px; }
   </style>
 </head>
 <body>
-  <h1>AI Customer Intelligence — Dashboard</h1>
-  <p>Generated from <code>data/predictions.csv</code>.</p>
+  <h1>Problem Distribution Dashboard</h1>
   
         <section>
-          <h2>Routing Overview</h2>
-          <div class="kpi-grid">
-            <div class="kpi"><div class="kpi-label">Total Queries</div><div class="kpi-value">100</div></div>
-            <div class="kpi"><div class="kpi-label">Accuracy (correct)</div><div class="kpi-value">0.9000</div></div>
-            <div class="kpi"><div class="kpi-label">Urgent Override Rate</div><div class="kpi-value">0.0900</div></div>
+          <h2>Problem Distribution Dashboard</h2>
+          <p class="meta"><strong>Total Queries:</strong> 100</p>
+          <div class="grid-2">
+            <div class="panel">
+              <h3>% of Total Queries by Category</h3>
+              <table class="data-table">
+                <thead><tr><th>Issue Type</th><th class="num-col">% Queries</th></tr></thead>
+                <tbody><tr><td>General Inquiry</td><td style='text-align:right'>24.00%</td></tr>
+<tr><td>Product Complaint</td><td style='text-align:right'>18.00%</td></tr>
+<tr><td>Delivery Delay</td><td style='text-align:right'>15.00%</td></tr>
+<tr><td>Order Status</td><td style='text-align:right'>15.00%</td></tr>
+<tr><td>Refund Request</td><td style='text-align:right'>14.00%</td></tr>
+<tr><td>Payment Issue</td><td style='text-align:right'>14.00%</td></tr></tbody>
+              </table>
+            </div>
+            <div class="panel">
+              <h3>Most Common Customer Problems</h3>
+              <table class="data-table">
+                <thead><tr><th>Issue Type</th><th class="num-col">Count</th><th class="num-col">%</th></tr></thead>
+                <tbody><tr><td>General Inquiry</td><td style='text-align:right'>24</td><td style='text-align:right'>24.00%</td></tr>
+<tr><td>Product Complaint</td><td style='text-align:right'>18</td><td style='text-align:right'>18.00%</td></tr>
+<tr><td>Delivery Delay</td><td style='text-align:right'>15</td><td style='text-align:right'>15.00%</td></tr>
+<tr><td>Order Status</td><td style='text-align:right'>15</td><td style='text-align:right'>15.00%</td></tr>
+<tr><td>Refund Request</td><td style='text-align:right'>14</td><td style='text-align:right'>14.00%</td></tr></tbody>
+              </table>
+            </div>
           </div>
         </section>
         
-<section><div class="chart"><h3>Action Distribution</h3><p><em>Chart not generated (matplotlib unavailable in this environment).</em></p></div><div class="chart"><h3>Confidence Tier Distribution</h3><p><em>Chart not generated (matplotlib unavailable in this environment).</em></p></div></section>
-<section><div class="chart"><h3>Volume by True Category</h3><p><em>Chart not generated (matplotlib unavailable in this environment).</em></p></div><div class="chart"><h3>Volume by Channel</h3><p><em>Chart not generated (matplotlib unavailable in this environment).</em></p></div></section>
-<section><div class="chart"><h3>Avg Confidence by Channel</h3><p><em>Chart not generated (matplotlib unavailable in this environment).</em></p></div></section>
-<section><div class="chart"><h3>Misclassification Heatmap</h3><p><em>Chart not generated (matplotlib unavailable in this environment).</em></p></div></section>
+<section><div class='chart'><h3>% of Queries by Category</h3><div class='bar-chart'><div class='bar-row'><div class='bar-label'>General Inquiry</div><div class='bar-wrap'><div class='bar-fill' style='width:100.00%'></div></div><div class='bar-value'>24.00</div></div>
+<div class='bar-row'><div class='bar-label'>Product Complaint</div><div class='bar-wrap'><div class='bar-fill' style='width:75.00%'></div></div><div class='bar-value'>18.00</div></div>
+<div class='bar-row'><div class='bar-label'>Delivery Delay</div><div class='bar-wrap'><div class='bar-fill' style='width:62.50%'></div></div><div class='bar-value'>15.00</div></div>
+<div class='bar-row'><div class='bar-label'>Order Status</div><div class='bar-wrap'><div class='bar-fill' style='width:62.50%'></div></div><div class='bar-value'>15.00</div></div>
+<div class='bar-row'><div class='bar-label'>Refund Request</div><div class='bar-wrap'><div class='bar-fill' style='width:58.33%'></div></div><div class='bar-value'>14.00</div></div>
+<div class='bar-row'><div class='bar-label'>Payment Issue</div><div class='bar-wrap'><div class='bar-fill' style='width:58.33%'></div></div><div class='bar-value'>14.00</div></div></div></div></section>
+<section>
+<div class='chart'>
+  <h3>Weekly Trend (proxy)</h3>
+  <svg viewBox='0 0 900 280' class='line-chart' role='img' aria-label='Weekly Trend (proxy)'>
+    <line x1='45' y1='240' x2='880' y2='240' class='axis'></line>
+    <line x1='45' y1='20' x2='45' y2='240' class='axis'></line>
+    <polyline points='45.00,20.00 104.64,20.00 164.29,20.00 223.93,20.00 283.57,20.00 343.21,20.00 402.86,20.00 462.50,20.00 522.14,20.00 581.79,20.00 641.43,20.00 701.07,20.00 760.71,20.00 820.36,20.00 880.00,177.14' class='trend-line'></polyline>
+    <circle cx='45.00' cy='20.00' r='4'></circle>
+<circle cx='104.64' cy='20.00' r='4'></circle>
+<circle cx='164.29' cy='20.00' r='4'></circle>
+<circle cx='223.93' cy='20.00' r='4'></circle>
+<circle cx='283.57' cy='20.00' r='4'></circle>
+<circle cx='343.21' cy='20.00' r='4'></circle>
+<circle cx='402.86' cy='20.00' r='4'></circle>
+<circle cx='462.50' cy='20.00' r='4'></circle>
+<circle cx='522.14' cy='20.00' r='4'></circle>
+<circle cx='581.79' cy='20.00' r='4'></circle>
+<circle cx='641.43' cy='20.00' r='4'></circle>
+<circle cx='701.07' cy='20.00' r='4'></circle>
+<circle cx='760.71' cy='20.00' r='4'></circle>
+<circle cx='820.36' cy='20.00' r='4'></circle>
+<circle cx='880.00' cy='177.14' r='4'></circle>
+    <text x='45.00' y='268' text-anchor='middle' class='axis-label'>Week-1</text>
+<text x='104.64' y='268' text-anchor='middle' class='axis-label'>Week-2</text>
+<text x='164.29' y='268' text-anchor='middle' class='axis-label'>Week-3</text>
+<text x='223.93' y='268' text-anchor='middle' class='axis-label'>Week-4</text>
+<text x='283.57' y='268' text-anchor='middle' class='axis-label'>Week-5</text>
+<text x='343.21' y='268' text-anchor='middle' class='axis-label'>Week-6</text>
+<text x='402.86' y='268' text-anchor='middle' class='axis-label'>Week-7</text>
+<text x='462.50' y='268' text-anchor='middle' class='axis-label'>Week-8</text>
+<text x='522.14' y='268' text-anchor='middle' class='axis-label'>Week-9</text>
+<text x='581.79' y='268' text-anchor='middle' class='axis-label'>Week-10</text>
+<text x='641.43' y='268' text-anchor='middle' class='axis-label'>Week-11</text>
+<text x='701.07' y='268' text-anchor='middle' class='axis-label'>Week-12</text>
+<text x='760.71' y='268' text-anchor='middle' class='axis-label'>Week-13</text>
+<text x='820.36' y='268' text-anchor='middle' class='axis-label'>Week-14</text>
+<text x='880.00' y='268' text-anchor='middle' class='axis-label'>Week-15</text>
+    <text x='45.00' y='12.00' text-anchor='middle' class='point-value'>7</text>
+<text x='104.64' y='12.00' text-anchor='middle' class='point-value'>7</text>
+<text x='164.29' y='12.00' text-anchor='middle' class='point-value'>7</text>
+<text x='223.93' y='12.00' text-anchor='middle' class='point-value'>7</text>
+<text x='283.57' y='12.00' text-anchor='middle' class='point-value'>7</text>
+<text x='343.21' y='12.00' text-anchor='middle' class='point-value'>7</text>
+<text x='402.86' y='12.00' text-anchor='middle' class='point-value'>7</text>
+<text x='462.50' y='12.00' text-anchor='middle' class='point-value'>7</text>
+<text x='522.14' y='12.00' text-anchor='middle' class='point-value'>7</text>
+<text x='581.79' y='12.00' text-anchor='middle' class='point-value'>7</text>
+<text x='641.43' y='12.00' text-anchor='middle' class='point-value'>7</text>
+<text x='701.07' y='12.00' text-anchor='middle' class='point-value'>7</text>
+<text x='760.71' y='12.00' text-anchor='middle' class='point-value'>7</text>
+<text x='820.36' y='12.00' text-anchor='middle' class='point-value'>7</text>
+<text x='880.00' y='169.14' text-anchor='middle' class='point-value'>2</text>
+  </svg>
+</div>
 
-        <section>
-          <h2>Top Confused Category Pairs</h2>
-          <table>
-            <thead><tr><th>True</th><th>Predicted</th><th>Count</th></tr></thead>
-            <tbody><tr><td>Order Status</td><td>Delivery Delay</td><td style='text-align:right'>2</td></tr>
-<tr><td>General Inquiry</td><td>Delivery Delay</td><td style='text-align:right'>2</td></tr>
-<tr><td>Delivery Delay</td><td>Product Complaint</td><td style='text-align:right'>1</td></tr>
-<tr><td>Delivery Delay</td><td>Order Status</td><td style='text-align:right'>1</td></tr>
-<tr><td>Order Status</td><td>General Inquiry</td><td style='text-align:right'>1</td></tr>
-<tr><td>Payment Issue</td><td>Delivery Delay</td><td style='text-align:right'>1</td></tr>
-<tr><td>Product Complaint</td><td>Payment Issue</td><td style='text-align:right'>1</td></tr>
-<tr><td>Refund Request</td><td>Delivery Delay</td><td style='text-align:right'>1</td></tr></tbody>
-          </table>
-        </section>
-        
-
-        <section>
-          <h2>SLA Forecast Proxy</h2>
-          <p>Proxy derived from <code>confidence_tier</code> only (not real SLA adherence).</p>
-          <table>
-            <thead><tr><th>Confidence Tier</th><th>Queries</th></tr></thead>
-            <tbody><tr><td>High</td><td style='text-align:right'>83</td></tr>
-<tr><td>Medium</td><td style='text-align:right'>9</td></tr>
-<tr><td>Low</td><td style='text-align:right'>8</td></tr></tbody>
-          </table>
-        </section>
-        
+<div class='chart'>
+  <h3>Monthly Trend (proxy)</h3>
+  <svg viewBox='0 0 900 280' class='line-chart' role='img' aria-label='Monthly Trend (proxy)'>
+    <line x1='45' y1='240' x2='880' y2='240' class='axis'></line>
+    <line x1='45' y1='20' x2='45' y2='240' class='axis'></line>
+    <polyline points='45.00,20.00 323.33,20.00 601.67,20.00 880.00,166.67' class='trend-line'></polyline>
+    <circle cx='45.00' cy='20.00' r='4'></circle>
+<circle cx='323.33' cy='20.00' r='4'></circle>
+<circle cx='601.67' cy='20.00' r='4'></circle>
+<circle cx='880.00' cy='166.67' r='4'></circle>
+    <text x='45.00' y='268' text-anchor='middle' class='axis-label'>Month-1</text>
+<text x='323.33' y='268' text-anchor='middle' class='axis-label'>Month-2</text>
+<text x='601.67' y='268' text-anchor='middle' class='axis-label'>Month-3</text>
+<text x='880.00' y='268' text-anchor='middle' class='axis-label'>Month-4</text>
+    <text x='45.00' y='12.00' text-anchor='middle' class='point-value'>30</text>
+<text x='323.33' y='12.00' text-anchor='middle' class='point-value'>30</text>
+<text x='601.67' y='12.00' text-anchor='middle' class='point-value'>30</text>
+<text x='880.00' y='158.67' text-anchor='middle' class='point-value'>10</text>
+  </svg>
+</div>
+</section>
 </body>
 </html>
