@@ -10,21 +10,16 @@ The system also assigns SLA expectations, supports FAQ-assisted replies, and rec
 
 ## End-to-End Flow (Input → Processing → Output)
 
-```mermaid
-flowchart TD
-  A[Customer Query Input<br/>(query_text, channel, priority, query_id)] --> B[Preprocessing (lightweight)]
-  B --> C[Urgency Keyword Override Check]
-  C --> D[Category Prediction (Hybrid Classifier)]
-  D --> E{Routing Decision}
-  E -->|Auto-Reply| F[Generate Channel-Specific Reply + FAQ Match]
-  E -->|Ticket Creation| G[Create Ticket + SLA Deadlines]
-  E -->|Human Escalation| H[Escalate to Live Agent + SLA Deadlines]
-  F --> I[Write Audit Log Record]
-  G --> I[Write Audit Log Record]
-  H --> I[Write Audit Log Record]
-  I --> J[Dashboard Inputs]
-  J --> K[Compute Metrics & Visualizations]
-```
+- Input: customer query enters with `query_text`, `channel`, `priority`, and `query_id`
+- Processing:
+  - Lightweight preprocessing and urgent keyword check
+  - Category prediction with hybrid classifier
+  - Routing into auto-reply, ticket creation, or human escalation
+  - SLA assignment and audit logging
+- Output:
+  - Customer-facing response
+  - Ticket record (if applicable)
+  - Audit + dashboard-ready metrics
 
 ## Components (as implemented in this repo)
 
